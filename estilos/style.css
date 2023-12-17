@@ -115,7 +115,7 @@ form > .campo {
     width: calc(100% - 45px) ;
     transform: translateY(-12px);
     height: 100%;
-    border: 2px solid  #005A5B;
+    border: none;
     border-radius: 8px;
 }
 .campo > input:focus-within{
