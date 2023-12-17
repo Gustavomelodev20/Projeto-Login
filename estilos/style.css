@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+/* 
+  cores
+  Verde 01: #005A5B
+  Verde 02: #007369
+  Verde 03: #008C72
+  verde 04: #02A676
+  lilas: #5f2c82
+*/
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html, body {
+    background-color: #008C72;
+    height: 100vh;
+    width: 100vw;
+}
+main {
+    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+#login {
+    display: block;
+    width: 250px;
+    height: 500px;
+    overflow: hidden;
+
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
+
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
+}
+#login > div#imagem {
+    display: block;
+    background: #02A676 url(../imgs/pexels-pixabay-159376.jpg) no-repeat;
+    background-size: cover;
+    height: 200px;
+    background-position:left top ;
+}
+#login > #formulario {
+    display: block;
+    padding: 10px;
+}
+#formulario > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+#formulario > p {
+    font-size: 0.8em;
+}
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #007369;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+form > input[type=submit]:hover {
+    background-color: #005A5B;
+    
+}
+form > .botao {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    color: #007369 ;
+    border: 1px solid #007369;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 5px;
+    margin-top: 5px;
+}
+form > a.botao > span {
+    font-size: 0.8em;
+}
+form > a.botao:hover {
+    background-color: #008C72;
+    color: white;
+}
+form > .campo {
+    background-color: #005A5B;
+    height: 40px;
+    border-radius: 8px;
+    margin: 5px 0px;
+}
+.campo > span {
+    color: white;
+    
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+.campo > input {
+    background-color: #02A676 ;
+    font-size: 1em;
+    width: calc(100% - 45px) ;
+    transform: translateY(-10px);
+    height: 100%;
+    border: 2px solid  #005A5B;
+    border-radius: 8px;
+}
+.campo > input:focus-within{
+    background-color: white;
+}
